@@ -36,3 +36,7 @@ A configurtion can include:
 - Internal attributes: The agent's memory, data, or variables that define its current situation.
 - External environment conditions: Information about the environment in which the agent operates (e.g., sensor readings, external events).
 - Agent's position or situation: Where the agent is in relation to its task or goal (e.g., location in a map, current progress in a process).
+
+### Ahm... and an initial state?
+Is the state from which the search algorithm starts. In a navigator app, that would be the current location, or in a maze, the position where you start.
+
