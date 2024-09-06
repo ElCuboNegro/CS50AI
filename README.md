@@ -39,4 +39,6 @@ A configurtion can include:
 
 ### Ahm... and an initial state?
 Is the state from which the search algorithm starts. In a navigator app, that would be the current location, or in a maze, the position where you start.
+so, you start from a initial state, and then you perform an action. that action modified the system configuration, so you are in a new state. Congratulations!
 
+## What is an action?
