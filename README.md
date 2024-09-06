@@ -7,7 +7,9 @@ and finally, what is a problem. yep, we will go deep into the rabbit hole
 
 ## What the fuck is an Agent?
 Well, an agent is a piece of software that is aware of it's context, so it's capable
-of taking decisions about how to interact with it's environment.
+of taking decisions about how to interact with it's environment and has a desired state (which it tries to reach).
+
+![image](https://github.com/user-attachments/assets/a59997d0-0352-4eb8-969a-486737fa8d43)
 
 ### What the fuck an agent can do?
 It's a brief list.
@@ -18,6 +20,7 @@ It's a brief list.
 - Interact with the environment: AI agents can interact with their environment.
   
 Then, more or less, an Intelligent agent is something that behave in this particular way:
+
 ![image](https://github.com/user-attachments/assets/119b7525-dbf7-4348-90d0-74f931833e34)
 
 ## What the fuck is a state?
