@@ -55,7 +55,8 @@ In a 15-puzzle, given a state `s`, the **Actions(s)** function will return all p
 
 ```
   Actions(s) = {
-    if the empty square is in the middle: 4 actions,
-    if the empty square is on the side: 3 actions,
-    if the empty square is in the corner: 2 actions 
+    s = empty square position.
+    if the empty square is in the middle: {<4 actions>: a1, a2, a3, a4},
+    if the empty square is on the side: {<3 actions>: a1, a2, a3},
+    if the empty square is in the corner: {<2 actions>: a1, a2}, 
 }
