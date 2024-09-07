@@ -82,3 +82,6 @@ Where:
 #### Example:
 In a 15-puzzle, given a certain configuration of the puzzle (state `s`), moving a square in any direction (action `a`) will result in a new configuration of the puzzle (the new state `s'`).
 
+---
+
+
