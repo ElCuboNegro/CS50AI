@@ -60,3 +60,18 @@ In a 15-puzzle, given a state `s`, the **Actions(s)** function will return all p
     if the empty square is on the side: {<3 actions>: a1, a2, a3},
     if the empty square is in the corner: {<2 actions>: a1, a2}, 
 }
+
+### Transition Model
+
+A **transition model** describes what state results from performing any applicable action in a given state. More precisely, the transition model can be defined as a function:
+
+`Results(s, a) -> s'`
+
+Where:
+- **s** is the current state.
+- **a** is the action performed in state **s**.
+- **Results(s, a)** is a function that returns the new state **s'** after performing action **a** in state **s**.
+
+#### Example:
+In a 15-puzzle, given a certain configuration of the puzzle (state `s`), moving a square in any direction (action `a`) will result in a new configuration of the puzzle (the new state `s'`).
+
