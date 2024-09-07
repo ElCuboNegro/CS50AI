@@ -37,8 +37,25 @@ A configurtion can include:
 - External environment conditions: Information about the environment in which the agent operates (e.g., sensor readings, external events).
 - Agent's position or situation: Where the agent is in relation to its task or goal (e.g., location in a map, current progress in a process).
 
-### Ahm... and an initial state?
-Is the state from which the search algorithm starts. In a navigator app, that would be the current location, or in a maze, the position where you start.
-so, you start from a initial state, and then you perform an action. that action modified the system configuration, so you are in a new state. Congratulations!
+### Initial State
+The **initial state** is the starting point of the search process. For example, in a navigator app, it’s the current location, and in a maze, it’s the starting position. You begin from this state and execute an action, which modifies the system's configuration, transitioning you to a new state.
 
-## What is an action?
+### Action
+An **action** is a choice that can be made in a particular state. Formally, an action can be described as a function:
+
+`Actions(s) -> {a1, a2, ..., an}`
+
+Where:
+- **s** is the current state.
+- **Actions(s)** is a function that returns the set of all possible actions `{a1, a2, ..., an}` that can be performed in state **s**.
+- Each **a(i)** represents a valid action in that state.
+
+#### Example:
+In a 15-puzzle, given a state `s`, the **Actions(s)** function will return all possible moves (e.g., sliding a tile up, down, left, or right) based on the position of the empty square.
+
+```
+  Actions(s) = {
+    4 actions if the empty square is in the middle,
+    3 actions if the empty square is on the side,
+    2 actions if the empty square is in the corner
+}
